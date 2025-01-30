@@ -2,15 +2,10 @@ import React from 'react';
 import { Box, Typography, Button, Avatar } from '@mui/material';
 import CommentForm from './CommentForm';
 import CommentList from './CommentList';
-import { Comment } from '../../types';
+import { CommentItemProps } from '../../types';
 import styles from '../../styles/CommentItem.module.scss';
 
-interface CommentItemProps {
-  comment: Comment;
-  onReply: (commentId: string, content: string) => void;
-  isReply?: boolean;
-  level?: number;
-}
+
 
 const CommentItem: React.FC<CommentItemProps> = ({ 
   comment, 

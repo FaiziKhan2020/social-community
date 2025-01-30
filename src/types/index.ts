@@ -1,3 +1,4 @@
+
 // Base types
 export interface User {
   id: string;
@@ -22,22 +23,36 @@ export interface Post {
   comments: Comment[];
 }
 
-// Component Props
+// Component Props Interface
 export interface PostProps {
   post: Post;
-  onAddComment: (postId: string, content: string) => void;
+  onAddComment: (content: string) => void;
+  onReplyToComment: (commentId: string, content: string) => void;
 }
 
 export interface CommentItemProps {
   comment: Comment;
-  level: number;
+  onReply: (commentId: string, content: string) => void;
+  isReply?: boolean;
+  level?: number;
 }
 
 export interface CommentListProps {
   comments: Comment[];
+  onReply: (commentId: string, content: string) => void;
+  isReply?: boolean;
   level?: number;
 }
 
 export interface CommentFormProps {
   onSubmit: (content: string) => void;
-} 
+}
+
+export interface CreatePostModalProps {
+  open: boolean;
+  onClose: () => void;
+  onSubmit: (title: string, content: string) => void;
+}
+export interface PostFormProps {
+  onSubmit: (title: string, content: string) => void;
+}

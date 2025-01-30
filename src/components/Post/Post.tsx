@@ -1,14 +1,9 @@
 import React from 'react';
 import { Box, Typography, Avatar } from '@mui/material';
-import { Post as PostType } from '../../types';
+import { PostProps } from '../../types';
 import { CommentList, CommentForm } from '../Comment';
 import styles from '../../styles/Post.module.scss';
 
-interface PostProps {
-  post: PostType;
-  onAddComment: (content: string) => void;
-  onReplyToComment: (commentId: string, content: string) => void;
-}
 
 const Post: React.FC<PostProps> = ({ post, onAddComment, onReplyToComment }) => {
   return (

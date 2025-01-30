@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button } from '@mui/material';
 import styles from '../../styles/CommentForm.module.scss';
+import { CommentFormProps } from '../../types';
 
-interface CommentFormProps {
-  onSubmit: (content: string) => void;
-}
+
 
 const CommentForm: React.FC<CommentFormProps> = ({ onSubmit }) => {
   const [content, setContent] = useState('');

@@ -2,10 +2,9 @@ import React from 'react';
 import { Box, TextField, Button } from '@mui/material';
 import { useFormField } from '../../hooks';
 import styles from '../../styles/PostForm.module.scss';
+import { PostFormProps } from '../../types';
 
-interface PostFormProps {
-  onSubmit: (title: string, content: string) => void;
-}
+
 
 const PostForm: React.FC<PostFormProps> = ({ onSubmit }) => {
   const titleField = useFormField({

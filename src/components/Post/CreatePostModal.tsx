@@ -3,12 +3,9 @@ import { Dialog, DialogContent, DialogTitle, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import PostForm from './PostForm';
 import styles from '../../styles/CreatePostModal.module.scss';
+import { CreatePostModalProps } from '../../types';
 
-interface CreatePostModalProps {
-  open: boolean;
-  onClose: () => void;
-  onSubmit: (title: string, content: string) => void;
-}
+
 
 const CreatePostModal: React.FC<CreatePostModalProps> = ({ open, onClose, onSubmit }) => {
   const handleSubmit = (title: string, content: string) => {

@@ -1,16 +1,11 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import CommentItem from './CommentItem';
-import { Comment } from '../../types';
+import { CommentListProps } from '../../types';
 import styles from '../../styles/CommentList.module.scss';
 import classNames from 'classnames';
 
-interface CommentListProps {
-  comments: Comment[];
-  onReply: (commentId: string, content: string) => void;
-  isReply?: boolean;
-  level?: number;
-}
+
 
 const CommentList: React.FC<CommentListProps> = ({ 
   comments, 
