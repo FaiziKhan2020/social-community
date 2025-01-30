@@ -1,0 +1,20 @@
+.commentList {
+  margin-left: 44px;
+  margin-top: 16px;
+  padding-left: 16px;
+  border-left: 2px solid #e9ecef;
+
+  &.level-0 {
+    margin-left: 0;
+    border-left: none;
+  }
+  &.level-1 {
+    margin-left: 24px;
+  }
+  &.level-2 {
+    margin-left: 48px;
+  }
+  &.level-3 {
+    margin-left: 72px;
+  }
+} 

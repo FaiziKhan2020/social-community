@@ -1,0 +1,40 @@
+{
+  "name": "mikhail",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.12",
+    "@mui/material": "^5.15.12",
+    "@types/classnames": "^2.3.4",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "date-fns": "^3.3.1",
+    "eslint-plugin-react": "^7.33.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^5.1.4"
+  }
+}

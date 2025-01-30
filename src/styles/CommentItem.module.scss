@@ -1,0 +1,57 @@
+.comment {
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+
+  .commentContent {
+    display: flex;
+    gap: 12px;
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+    }
+
+    .mainContent {
+      flex: 1;
+
+      .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .author {
+          font-weight: 600;
+          color: #1976d2;
+        }
+      }
+
+      .content {
+        margin-bottom: 12px;
+        color: #212529;
+      }
+
+      .actions {
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        button {
+          color: #6c757d;
+          text-transform: none;
+          padding: 4px 8px;
+
+          &:hover {
+            background-color: rgba(108, 117, 125, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  .replyForm {
+    margin-top: 16px;
+    margin-left: 44px;
+    margin-bottom: 16px;
+  }
+} 
